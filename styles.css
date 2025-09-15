@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.logo {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-color);
+}
+
+.font1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+  font-size: 60px;
+  font-variation-settings: "wdth" 100;
+}
+.font2 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+  font-size: 40px;
+  font-variation-settings: "wdth" 100;
+}
+:root {
+  --main-color: #1e40af;
+  --second-color: #f59e0b;
+}
+a {
+  text-decoration: none !important;
+}
+
+nav {
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: white; /* Background color */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* New style when scrolled */
+nav.scrolled {
+  background-color: var(--second-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+nav.scrolled .nav-link {
+  color: white !important; /* Change link colors */
+}
+
+nav.scrolled .book-now {
+  background-color: white;
+  color: var(--second-color);
+}
+
+.nav a {
+  color: black;
+  font-weight: 600;
+}
+
+.book-now {
+  background-color: var(--second-color);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.view-portfolio {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+}
+
+main {
+  background: linear-gradient(135deg, #1e40af 60%, #f59e0b 100%);
+
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+main > div > div > img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.choose-us > div > div > img {
+  width: 95%;
+  border-radius: 10px;
+}
+
+.choose-us {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  padding: 80px 20px;
+}
+
+.service-card {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: scale(0.95); /* shrink */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 20px; /* deeper shadow */
+}
+
+.client-img img {
+  width: 100px; /* adjust size as you like */
+  height: 100px; /* same as width to make it a perfect circle */
+  object-fit: cover; /* ensures the image fills the circle without distortion */
+  border-radius: 50%; /* makes it circular */
+  border: 4px solid #1e40af; /* border with your color */
+}
+
+.ready {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  color: white;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #1e40af, #042252);
+  color: white;
+  padding: 30px 20px 10px 20px;
+}
+
+.list-unstyled li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.thin-line {
+  height: 1px; /* very thin */
+  background-color: gray; /* line color */
+  width: 100%; /* full width */
+}
+
+/* About Page */
+.main-about {
+  position: relative;
+  height: 50vh;
+  background-image: url("./images/typing.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.main-about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 64, 175, 0.5);
+}
+.main-about-content {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.img {
+  width: 95%;
+  border-radius: 10px;
+}
+
+.ceo-img img {
+  width: 300px; /* adjust size as you like */
+  height: 300px; /* same as width to make it a perfect circle */
+  object-fit: cover; /* ensures the image fills the circle without distortion */
+  border-radius: 50%; /* makes it circular */
+  border: 4px solid #1e40af; /* border with your color */
+}
+/*For Mobile Screen*/
+
+@media (max-width: 767px) {
+  nav .nav-item {
+    display: none !important;
+  }
+
+  .menu {
+    display: flex; /* keep flex so transition works */
+    flex-direction: column;
+    width: 70%; /* adjust width of the sliding panel */
+    max-width: 300px; /* optional */
+    position: fixed; /* fixed so it stays on screen */
+    top: 50px;
+    right: 0;
+    height: 100vh;
+    background-color: white;
+    padding: 30px;
+    z-index: 999; /* make sure it's above everything */
+
+    /* Animation start: hidden offscreen */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu > a {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+  }
+  #menu-item:hover {
+    color: var(--main-color);
+  }
+  .menu-icon {
+    border: none;
+    margin-right: 30px;
+    font-size: 30px;
+    background: none;
+    color: black;
+  }
+  .menu-icon.close {
+    display: block;
+  }
+  .menu.active {
+    transform: translateX(0); /* Slide into view */
+  }
+
+  .choose-us > div > div > img {
+    width: 100%;
+
+    display: block;
+    margin: auto;
+  }
+
+  .img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .ovx {
+    overflow-x: scroll !important;
+  }
+}
+
+/*For Tablet Screen*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav .nav-item {
+    display: none !important;
+  }
+
+  .menu {
+    display: flex; /* keep flex so transition works */
+    flex-direction: column;
+    width: 70%; /* adjust width of the sliding panel */
+    max-width: 300px; /* optional */
+    position: fixed; /* fixed so it stays on screen */
+    top: 50px;
+    right: 0;
+    height: 100vh;
+    background-color: white;
+    padding: 30px;
+    z-index: 999; /* make sure it's above everything */
+
+    /* Animation start: hidden offscreen */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu > a {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+  }
+  #menu-item:hover {
+    color: var(--main-color);
+  }
+  .menu-icon {
+    border: none;
+    margin-right: 30px;
+    font-size: 30px;
+    background: none;
+    color: black;
+  }
+  .menu-icon.close {
+    display: block;
+  }
+  .menu.active {
+    transform: translateX(0); /* Slide into view */
+  }
+
+  main > div > div > img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+  }
+}

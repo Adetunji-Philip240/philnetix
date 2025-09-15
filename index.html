@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHILNETIX - The Best Software Engineering Company in Nigeria</title>
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--The Navigation Bar-->
+    <nav
+      class="d-flex justify-content-between align-items-center p-3 shadow-sm"
+    >
+      <div class="logo">
+        <h4 class="m-0">PHILNETIX</h4>
+      </div>
+
+      <!-- Navigation Links For Larger Screen-->
+      <ul class="nav">
+        <li class="nav-item py-2">
+          <a class="nav-link" style="color: var(--main-color)" href="/">Home</a>
+        </li>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item py-2"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"
+            ><button type="button" class="px-4 py-2 book-now rounded">
+              Book Now
+            </button></a
+          >
+        </li>
+      </ul>
+      <!-- Hamburger Icon -->
+      <button class="menu-icon d-lg-none" onclick="toggleMenu()">
+        <span
+          style="color: var(--main-color)"
+          id="toggler"
+          class="fas fa-bars"
+        ></span>
+      </button>
+
+      <!-- Navigation Links For Smaller Screen-->
+      <div id="menu" class="menu d-lg-none">
+        <a id="menu-item" style="color: var(--main-color)" href="/">Home</a>
+        <a id="menu-item" href="about.html">About</a>
+        <a id="menu-item" href="countries.html">Services</a>
+        <a id="menu-item" href="contact.html">Portfolio</a>
+        <a id="menu-item" href="careers.html">Contact Us</a>
+        <a href="/"
+          ><button type="button" class="px-4 py-2 book-now rounded">
+            Book Now
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <!--The Main Section-->
+    <main>
+      <div class="row" style="margin-top: 100px; padding-bottom: 30px">
+        <div class="col-sm-6 text-lg-start text-md-start text-center">
+          <h1 class="font1">
+            Grow Your Brand Online with
+            <span style="color: var(--second-color)">PHILNETIX</span>
+          </h1>
+          <p class="fs-4">
+            We help businesses and individuals build a strong online presence
+            through modern, professional, and user-friendly websites. Get more
+            customers online with a professional website.
+          </p>
+
+          <div>
+            <a href="/"
+              ><button class="book-now px-4 py-2 rounded">Book Now</button></a
+            >
+            <a href="/"
+              ><button class="view-portfolio px-4 py-2 rounded">
+                View Portfolio
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="col-sm-6 mt-md-5 mt-lg-3">
+          <img
+            src="./images/program.webp"
+            alt="programming"
+            class="mx-auto d-lg-block d-none d-md-block mt-md-5 mt-lg-4"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!--Our Services-->
+    <div class="container mt-5">
+      <h2 class="font2 text-center" style="color: var(--main-color)">
+        Our Services
+      </h2>
+      <p class="fs-5 text-center w-50 mx-auto mb-5">
+        We offer tailored digital services to boost your online presence and
+        business success.
+      </p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 mb-4">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-laptop-code fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Website Design & Development</p>
+            <p>
+              We create stunning, user-focused websites that rank higher and
+              help you win more clients online.
+            </p>
+
+            <a class="fw-bold" style="color: var(--second-color)" href="/"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-lightbulb fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Brand Marketing</p>
+            <p>
+              Build a powerful brand and smart marketing strategy to stand out
+              in the market and draw in customers.
+            </p>
+
+            <a class="fw-bold" style="color: var(--second-color)" href="/"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-bullhorn fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Social Media Marketing</p>
+            <p>
+              Grow awareness, capture quality leads, and maximize conversions
+              with targeted social media strategies.
+            </p>
+
+            <a class="fw-bold" style="color: var(--second-color)" href="/"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 mb-4">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-graduation-cap fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Web Development Training</p>
+            <p>
+              Learn to build modern websites from experienced developers in our
+              step-by-step training sessions.
+            </p>
+
+            <a class="fw-bold" style="color: var(--second-color)" href="/"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-shield-virus fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Cyber Security</p>
+            <p>
+              Keep your site and brand safe from online threats with our
+              reliable, end-to-end cybersecurity solutions.
+            </p>
+
+            <a class="fw-bold" style="color: var(--second-color)" href="/"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-user-graduate fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Programming Class</p>
+            <p>
+              Learn programming from scratch with step-by-step lessons guided by
+              experienced instructors.
+            </p>
+
+            <a class="fw-bold" style="color: var(--second-color)" href="/"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Why Choose US-->
+    <div class="choose-us" style="margin-top: 80px">
+      <div class="row container-fluid">
+        <div class="col-sm-6 mt-lg-5">
+          <img src="./images/choose.webp" alt="typing" />
+        </div>
+        <div class="col-sm-6">
+          <h2
+            class="fw-bold fs-1"
+            style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)"
+          >
+            Why Choose Us
+          </h2>
+          <p>
+            At PHILNETIX, we are committed to creating powerful web solutions
+            that drive growth and success for your business. Here’s why
+            businesses choose us:
+          </p>
+
+          <div class="row mt-lg-5">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start">
+                <!-- Icon -->
+                <div class="me-2">
+                  <i
+                    style="color: var(--second-color)"
+                    class="fa-solid fa-check-circle fs-5 mt-2"
+                  ></i>
+                </div>
+
+                <!-- Texts -->
+                <div>
+                  <p class="mb-0 fw-bold fs-5">Over 5 Years of Experience</p>
+                  <p class="mb-0">
+                    Backed by 5 years of experience, we provide web solutions
+                    that help your business grow online.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mt-3">
+                <!-- Icon -->
+                <div class="me-2">
+                  <i
+                    style="color: var(--second-color)"
+                    class="fa-solid fa-check-circle fs-5 mt-2"
+                  ></i>
+                </div>
+
+                <!-- Texts -->
+                <div>
+                  <p class="mb-0 fw-bold fs-5">
+                    Mobile-Optimized & SEO-Friendly
+                  </p>
+                  <p class="mb-0">
+                    We build websites that look great on every device and are
+                    designed to rank higher on search engines.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mt-3">
+                <!-- Icon -->
+                <div class="me-2">
+                  <i
+                    style="color: var(--second-color)"
+                    class="fa-solid fa-check-circle fs-5 mt-2"
+                  ></i>
+                </div>
+
+                <!-- Texts -->
+                <div>
+                  <p class="mb-0 fw-bold fs-5">Support That Never Ends</p>
+                  <p class="mb-0">
+                    From training to ongoing help, we make sure your website
+                    runs smoothly at all times.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start">
+                <!-- Icon -->
+                <div class="me-2">
+                  <i
+                    style="color: var(--second-color)"
+                    class="fa-solid fa-check-circle fs-5 mt-2"
+                  ></i>
+                </div>
+
+                <!-- Texts -->
+                <div>
+                  <p class="mb-0 fw-bold fs-5">Your Satisfaction First</p>
+                  <p class="mb-0">
+                    See your website in action and confirm it meets your
+                    expectations before making final payment.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mt-3">
+                <!-- Icon -->
+                <div class="me-2">
+                  <i
+                    style="color: var(--second-color)"
+                    class="fa-solid fa-check-circle fs-5 mt-2"
+                  ></i>
+                </div>
+
+                <!-- Texts -->
+                <div>
+                  <p class="mb-0 fw-bold fs-5">100% Commitment to Quality</p>
+                  <p class="mb-0">
+                    We work closely with you to ensure the finished product
+                    meets your expectations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mt-3">
+                <!-- Icon -->
+                <div class="me-2">
+                  <i
+                    style="color: var(--second-color)"
+                    class="fa-solid fa-check-circle fs-5 mt-2"
+                  ></i>
+                </div>
+
+                <!-- Texts -->
+                <div>
+                  <p class="mb-0 fw-bold fs-5">Affordable & Professional</p>
+                  <p class="mb-0">
+                    Enjoy premium quality websites at prices that make sense for
+                    your business.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--What Our Clients Say-->
+    <div class="container-fluid" style="margin-top: 80px">
+      <h2 style="color: var(--main-color)" class="text-center font2 fw-bold">
+        Our Clients Speak
+      </h2>
+      <p class="text-center fs-5">
+        Real feedback from clients who have experienced our services.
+      </p>
+
+      <div class="row flex-nowrap ovx" style="margin-top: 70px">
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="client-img">
+              <img
+                src="./images/client1.webp"
+                alt="client"
+                class="d-block mx-auto"
+              />
+              <p style="color: rgb(212, 211, 211)" class="text-center mt-3">
+                <i class="fa-solid fa-quote-left fs-1"></i>
+              </p>
+              <p style="color: rgb(77, 76, 76)" class="text-center fst-italic">
+                PHILNETIX gave my business the perfect website — modern, fast,
+                and results-driven! The team was supportive and professional
+                from start to finish.
+              </p>
+
+              <p class="text-center">
+                <span class="fw-bold">Richard</span><br />
+                <span style="color: rgb(77, 76, 76); font-size: 13px"
+                  >CEO, GOE Transport and Logistics Company LTD
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="client-img">
+              <img
+                src="./images/client1.webp"
+                alt="client"
+                class="d-block mx-auto"
+              />
+              <p style="color: rgb(212, 211, 211)" class="text-center mt-3">
+                <i class="fa-solid fa-quote-left fs-1"></i>
+              </p>
+              <p style="color: rgb(77, 76, 76)" class="text-center fst-italic">
+                The CEO was very productive during his internship — he improved
+                our online presence by developing a modern, effective website.
+              </p>
+
+              <p class="text-center">
+                <span class="fw-bold">Otunba Abdulazeez Babatunde. M</span
+                ><br />
+                <span style="color: rgb(77, 76, 76); font-size: 13px"
+                  >CEO/MD, Mickey Excellency Nigeria Limited
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="client-img">
+              <img
+                src="./images/client1.webp"
+                alt="client"
+                class="d-block mx-auto"
+              />
+              <p style="color: rgb(212, 211, 211)" class="text-center mt-3">
+                <i class="fa-solid fa-quote-left fs-1"></i>
+              </p>
+              <p style="color: rgb(77, 76, 76)" class="text-center fst-italic">
+                When I first saw the website they built, I thought it couldn’t
+                be a Nigerian site — it looked too amazing. To my surprise, it
+                was their work. Truly incredible!
+              </p>
+
+              <p class="text-center">
+                <span class="fw-bold">Majid</span><br />
+                <span style="color: rgb(77, 76, 76); font-size: 13px"
+                  >CEO/MD, Aadil Express LTD
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Ready to Build-->
+    <div class="ready">
+      <div class="container text-center my-5">
+        <h2
+          class="fw-bold fs-1"
+          style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)"
+        >
+          We’re Excited to Work With You
+        </h2>
+        <p class="w-75 mx-auto fs-5">
+          Start today — let our team guide you step by step in creating a
+          strong, lasting digital presence that helps your business grow.
+        </p>
+
+        <div>
+          <a href="/"
+            ><button class="book-now px-4 py-2 rounded mx-2">
+              Book Now
+            </button></a
+          >
+          <a href="/"
+            ><button class="view-portfolio px-4 py-2 rounded">
+              View Portfolio
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="row container-fluid">
+        <div class="col-sm-3">
+          <h4
+            class="fw-bold"
+            style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)"
+          >
+            PHILNETIX
+          </h4>
+          <p class="mt-3">
+            We help businesses and individuals build a strong online presence
+            through modern, professional, and user-friendly websites. Get more
+            customers online with a professional website.
+          </p>
+
+          <p>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-facebook text-white fs-5"></i
+            ></a>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-instagram text-white fs-5"></i
+            ></a>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-linkedin text-white fs-5"></i
+            ></a>
+          </p>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Quick Links</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="py-1"><a href="#">Home</a></li>
+            <li class="py-1"><a href="about.html">About</a></li>
+            <li class="py-1"><a href="#">Services</a></li>
+            <li class="py-1"><a href="#">Portfolio</a></li>
+            <li class="py-1"><a href="#">Book Now</a></li>
+            <li class="py-1"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Contact Us</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="py-1">
+              <a href="#"
+                ><i class="fa-regular fa-envelope text-white mx-2 fs-5"></i>
+                info@philnetix.com</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#"
+                ><i
+                  class="fa-solid fa-mobile-screen-button text-white mx-2 fs-5"
+                ></i
+                >+234 706 116 6390</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#"
+                ><i class="fa-brands fa-whatsapp text-white mx-2 fs-5"></i>+234
+                706 116 6390</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Coding Class</h4>
+          <p>
+            Interested in coding? Whether you’re a student or just love
+            learning, complete the form below, and we’ll reach out to you.
+          </p>
+
+          <form action="/">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="mb-2 form-control"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Whatsapp Number"
+              class="mb-2 form-control"
+              required
+            />
+
+            <a href="/"
+              ><button
+                type="submit"
+                class="book-now px-4 py-2 rounded form-control"
+              >
+                Enroll Now
+              </button></a
+            >
+          </form>
+        </div>
+      </div>
+      <div class="thin-line mt-5"></div>
+      <footer style="color: gray; font-size: 12px" class="text-center mt-2">
+        &copy; 2025 PHILNETIX. All Rights Reserved.
+      </footer>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="index.js"></script>
+  </body>
+</html>

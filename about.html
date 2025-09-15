@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About || PHILNETIX</title>
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--The Navigation Bar-->
+    <nav
+      class="d-flex justify-content-between align-items-center p-3 shadow-sm"
+    >
+      <div class="logo">
+        <h4 class="m-0">PHILNETIX</h4>
+      </div>
+
+      <!-- Navigation Links For Larger Screen-->
+      <ul class="nav">
+        <li class="nav-item py-2">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item py-2">
+          <a class="nav-link" style="color: var(--main-color)" href="/"
+            >About</a
+          >
+        </li>
+        <li class="nav-item py-2"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"
+            ><button type="button" class="px-4 py-2 book-now rounded">
+              Book Now
+            </button></a
+          >
+        </li>
+      </ul>
+      <!-- Hamburger Icon -->
+      <button class="menu-icon d-lg-none" onclick="toggleMenu()">
+        <span
+          id="toggler"
+          style="color: var(--main-color)"
+          class="fas fa-bars"
+        ></span>
+      </button>
+
+      <!-- Navigation Links For Smaller Screen-->
+      <div id="menu" class="menu d-lg-none">
+        <a id="menu-item" href="index.html">Home</a>
+        <a id="menu-item" style="color: var(--main-color)" href="/">About</a>
+        <a id="menu-item" href="countries.html">Services</a>
+        <a id="menu-item" href="contact.html">Portfolio</a>
+        <a id="menu-item" href="careers.html">Contact Us</a>
+        <a href="/"
+          ><button type="button" class="px-4 py-2 book-now rounded">
+            Book Now
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <!--Main About Section-->
+    <div class="main-about">
+      <div class="main-about-overlay"></div>
+      <div class="main-about-content">
+        <h1 style="font-size: 60px" class="fw-bold">About Us</h1>
+        <p class="fs-5 w-75 mx-auto text-center">
+          Discover PHILNETIX and our mission to help businesses thrive in the
+          digital world.
+        </p>
+      </div>
+    </div>
+
+    <!--Our Story-->
+    <div class="container-fluid" style="margin-top: 60px">
+      <div class="row mt-5">
+        <div class="col-sm-6 mt-lg-5 mt-md-5">
+          <h2 style="color: var(--main-color)" class="fw-bold fs-3">
+            Our Story
+          </h2>
+          <p class="mt-4">
+            PHILNETIX was founded by Adetunji Adewale Philip with a vision to
+            help businesses establish a strong and effective online presence.
+            With over 5 years of experience in web development, we understand
+            the challenges businesses face in today’s digital world.
+          </p>
+          <p>
+            What began as a small initiative has grown into a team of dedicated
+            professionals who are passionate about creating beautiful,
+            functional, and results-driven websites.
+          </p>
+          <p>
+            We take pride in turning our clients’ ideas into reality. Our
+            client-focused approach ensures that every project reflects the
+            unique identity, goals, and vision of the business it represents.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <img
+            src="./images/story.webp"
+            alt="programming"
+            class="mx-auto img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Our Founder-->
+    <div class="container" style="margin-top: 60px">
+      <h2 style="color: var(--main-color)" class="fw-bold fs-3 text-center">
+        Meet Our Founder
+      </h2>
+
+      <div class="row mt-5">
+        <div class="col-sm-6 mt-lg-5 mt-md-5">
+          <div class="ceo-img">
+            <img src="./images/wale.jfif" alt="ceo" class="mx-auto d-block" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h2 class="fw-bold fs-4 text-center text-lg-start text-md-start">
+            Adetunji Adewale Philip
+          </h2>
+          <p
+            style="color: gray"
+            class="fst-italic text-center text-lg-start text-md-start"
+          >
+            Founder & Lead Developer
+          </p>
+          <p>
+            Philip has over 5 years of experience in web development and digital
+            solutions. He founded PHILNETIX with a mission to help businesses
+            harness the power of the internet to grow and succeed.
+          </p>
+          <p>
+            With expertise across multiple web technologies and a strong eye for
+            design, Philip leads our team in building websites that are not only
+            visually appealing but also highly functional. His approach combines
+            technical skill with a deep understanding of business needs,
+            delivering solutions that truly drive results.
+          </p>
+          <p>
+            Passionate about empowering businesses through technology, Philip
+            remains hands-on with every project, ensuring quality and client
+            satisfaction at every step.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Our Expertise-->
+
+    <div class="container-fluid" style="margin-top: 60px">
+      <h2 style="color: var(--main-color)" class="fw-bold fs-3 text-center">
+        Our Expertise
+      </h2>
+
+      <div class="row mt-3">
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">HTML5, CSS3, JavaScript</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mt-3">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">Node.js, PHP, Python</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mt-3">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">Search Engine Optimization (SEO)</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mt-3">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">Programming Tutor</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">Web Hosting Management</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mt-3">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">React.js, Next.js</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mt-3">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">Digital Marketing</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mt-3">
+            <!-- Icon -->
+            <div class="me-2">
+              <i
+                style="color: var(--second-color)"
+                class="fa-solid fa-check-circle fs-5 mt-2"
+              ></i>
+            </div>
+
+            <!-- Texts -->
+            <div>
+              <p class="mb-0 fs-5">Social Media Integration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="index.js"></script>
+  </body>
+</html>
