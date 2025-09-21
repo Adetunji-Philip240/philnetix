@@ -37,7 +37,27 @@
             >About</a
           >
         </li>
-        <li class="nav-item py-2"><a class="nav-link" href="#">Services</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item py-2 dropdown">
+          <a class="nav-link dropdown-toggle">Services</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="./services/web-dev.html"
+                >Website Development</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Brand Marketing</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Social Media Marketing</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Web Development Training</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Programming Tutorial</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item py-2">
           <a class="nav-link" href="#">Portfolio</a>
         </li>
@@ -65,7 +85,21 @@
       <div id="menu" class="menu d-lg-none">
         <a id="menu-item" href="index.html">Home</a>
         <a id="menu-item" style="color: var(--main-color)" href="/">About</a>
-        <a id="menu-item" href="countries.html">Services</a>
+
+        <!-- Services with dropdown -->
+        <div class="dropdown-mobile">
+          <a id="menu-item" href="javascript:void(0)" onclick="toggleDropdown()"
+            >Services ▾</a
+          >
+          <div id="servicesDropdown" class="dropdown-content">
+            <a href="./services/web-dev.html">Website Development1</a>
+            <a href="#">Brand Marketing</a>
+            <a href="#">Social Media Marketing</a>
+            <a href="#">Web Development Training</a>
+            <a href="#">Programming Tutorial</a>
+          </div>
+        </div>
+
         <a id="menu-item" href="contact.html">Portfolio</a>
         <a id="menu-item" href="careers.html">Contact Us</a>
         <a href="/"
@@ -298,6 +332,174 @@
         </div>
       </div>
     </div>
+
+    <!--Our Mission-->
+    <div class="container text-center" style="margin-top: 60px">
+      <h2 style="color: var(--main-color)" class="fw-bold fs-3 text-center">
+        Our Mission
+      </h2>
+      <p class="fs-5">
+        We aim to support businesses in Nigeria and beyond by creating powerful
+        online identities through expert web design and development. Our focus
+        is on providing reliable, affordable, and high-quality solutions that
+        help our clients thrive in today’s digital world.
+      </p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 mb-4 text-center">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-trophy fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Excellence</p>
+            <p>
+              We are dedicated to excellence in everything we do—whether it’s
+              crafting designs, building websites, or offering customer care and
+              ongoing support.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4 text-center">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-users fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Client Success</p>
+            <p>
+              We are dedicated to our clients’ growth—delivering web solutions
+              that empower them to achieve their goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4 text-center">
+          <div class="service-card">
+            <i
+              style="color: var(--main-color)"
+              class="fa-solid fa-rocket fs-3 fw-bold"
+            ></i>
+            <p class="fw-bold fs-5 mt-2">Innovation</p>
+            <p>
+              We harness cutting-edge technologies and creative strategies to
+              provide forward-thinking solutions that position our clients for
+              long-term success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="row container-fluid">
+        <div class="col-sm-3">
+          <h4
+            class="fw-bold"
+            style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)"
+          >
+            PHILNETIX
+          </h4>
+          <p class="mt-3">
+            We help businesses and individuals build a strong online presence
+            through modern, professional, and user-friendly websites. Get more
+            customers online with a professional website.
+          </p>
+
+          <p>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-facebook text-white fs-5"></i
+            ></a>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-instagram text-white fs-5"></i
+            ></a>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-linkedin text-white fs-5"></i
+            ></a>
+          </p>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Quick Links</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="py-1"><a href="index.html">Home</a></li>
+            <li class="py-1">
+              <a style="color: var(--second-color)" href="/">About</a>
+            </li>
+            <li class="py-1"><a href="#">Services</a></li>
+            <li class="py-1"><a href="#">Portfolio</a></li>
+            <li class="py-1"><a href="#">Book Now</a></li>
+            <li class="py-1"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Contact Us</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="py-1">
+              <a href="#"
+                ><i class="fa-regular fa-envelope text-white mx-2 fs-5"></i>
+                info@philnetix.com</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#"
+                ><i
+                  class="fa-solid fa-mobile-screen-button text-white mx-2 fs-5"
+                ></i
+                >+234 706 116 6390</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#"
+                ><i class="fa-brands fa-whatsapp text-white mx-2 fs-5"></i>+234
+                706 116 6390</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Coding Class</h4>
+          <p>
+            Interested in coding? Whether you’re a student or just love
+            learning, complete the form below, and we’ll reach out to you.
+          </p>
+
+          <form action="/">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="mb-2 form-control"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Whatsapp Number"
+              class="mb-2 form-control"
+              required
+            />
+
+            <a href="/"
+              ><button
+                type="submit"
+                class="book-now px-4 py-2 rounded form-control"
+              >
+                Enroll Now
+              </button></a
+            >
+          </form>
+        </div>
+      </div>
+      <div class="thin-line mt-5"></div>
+      <footer style="color: gray; font-size: 12px" class="text-center mt-2">
+        &copy; 2025 PHILNETIX. All Rights Reserved.
+      </footer>
+    </div>
+
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

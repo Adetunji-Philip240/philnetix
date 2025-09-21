@@ -22,3 +22,11 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 });
+
+// For Dropdown Smaller screen
+
+function toggleDropdown() {
+  const dropdown = document.getElementById("servicesDropdown");
+  dropdown.style.display =
+    dropdown.style.display === "block" ? "none" : "block";
+}
