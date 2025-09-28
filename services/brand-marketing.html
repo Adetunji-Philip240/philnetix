@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Marketing || PHILNETIX</title>
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--The Navigation Bar-->
+    <nav
+      class="d-flex justify-content-between align-items-center p-3 shadow-sm"
+    >
+      <div class="logo">
+        <h4 class="m-0">PHILNETIX</h4>
+      </div>
+
+      <!-- Navigation Links For Larger Screen-->
+      <ul class="nav">
+        <li class="nav-item py-2">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="../about.html">About</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item py-2 dropdown">
+          <a class="nav-link dropdown-toggle" style="color: var(--main-color)"
+            >Services</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="web-dev.html"
+                >Website Development</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                style="border-right: 4px solid var(--main-color)"
+                >Brand Marketing</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="social-media.html"
+                >Social Media Marketing</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/">Web Development Training</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Programming Tutorial</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"
+            ><button type="button" class="px-4 py-2 book-now rounded">
+              Book Now
+            </button></a
+          >
+        </li>
+      </ul>
+      <!-- Hamburger Icon -->
+      <button class="menu-icon d-lg-none" onclick="toggleMenu()">
+        <span
+          style="color: var(--main-color)"
+          id="toggler"
+          class="fas fa-bars"
+        ></span>
+      </button>
+
+      <!-- Navigation Links For Smaller Screen-->
+      <div id="menu" class="menu d-lg-none">
+        <a id="menu-item" href="../index.html">Home</a>
+        <a id="menu-item" href="../about.html">About</a>
+
+        <!-- Services with dropdown -->
+        <div class="dropdown-mobile">
+          <a
+            id="menu-item"
+            href="javascript:void(0)"
+            onclick="toggleDropdown()"
+            style="color: var(--main-color)"
+            >Services ▾</a
+          >
+          <div id="servicesDropdown" class="dropdown-content">
+            <a href="web-dev.html">Website Development</a>
+            <a style="border-right: 4px solid var(--main-color)"
+              >Brand Marketing</a
+            >
+            <a href="social-media.html">Social Media Marketing</a>
+            <a href="#">Web Development Training</a>
+            <a href="#">Programming Tutorial</a>
+          </div>
+        </div>
+
+        <a id="menu-item" href="contact.html">Portfolio</a>
+        <a id="menu-item" href="careers.html">Contact Us</a>
+        <a href="/"
+          ><button type="button" class="px-4 py-2 book-now rounded">
+            Book Now
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <div class="main-services">
+      <div class="main-services-overlay"></div>
+      <div class="main-services-content">
+        <h1 style="font-size: 40px" class="fw-bold">Brand Marketing</h1>
+        <p class="fs-5 w-75 mx-auto text-center">
+          Build a powerful brand identity and effective marketing plan to stand
+          out in your industry
+        </p>
+      </div>
+    </div>
+
+    <div class="container-sm mt-5 px-5">
+      <h2 class="fs-2 fw-bold text-center" style="color: var(--main-color)">
+        Brand Marketing Services
+      </h2>
+      <p class="fs-5">
+        We help businesses build strong brand identities through strategy,
+        design, content, and digital marketing. Whether launching or refreshing
+        your brand, our tailored solutions drive awareness, engagement, and
+        growth.
+      </p>
+
+      <div class="container mt-5">
+        <div class="card1">
+          <p style="color: var(--main-color)" class="fw-bold fs-5">
+            Brand Identity & Design
+          </p>
+          <ul>
+            <li>Logo Design and Brand Guidelines</li>
+            <li>Visual style and color palette design</li>
+            <li>Messaging framework and brand voice</li>
+            <li>Business Cards and Stationery Design</li>
+            <li>Comprehensive brand style guide</li>
+          </ul>
+        </div>
+
+        <div class="card1 mt-5">
+          <p style="color: var(--main-color)" class="fw-bold fs-5">
+            Marketing Strategy & Planning
+          </p>
+          <ul>
+            <li>Audience research and segmentation</li>
+            <li>Competitor insights and analysis</li>
+            <li>Tailored marketing plan development</li>
+            <li>Content strategy and storytelling</li>
+            <li>Campaign design and implementation</li>
+          </ul>
+        </div>
+
+        <div class="card1 mt-5">
+          <p style="color: var(--main-color)" class="fw-bold fs-5">
+            Digital Marketing Solutions
+          </p>
+          <ul>
+            <li>SEO optimization</li>
+            <li>Paid advertising</li>
+            <li>Social media campaigns</li>
+            <li>Email marketing</li>
+            <li>Content strategy & promotion</li>
+          </ul>
+        </div>
+
+        <div class="card1 mt-5">
+          <p style="color: var(--main-color)" class="fw-bold fs-5">Pricing</p>
+          <p>
+            Our brand marketing packages are customized to fit your business
+            needs, with costs based on project scope and requirements.
+          </p>
+          <p class="fw-bold">Plans start at ₦30,000</p>
+        </div>
+
+        <a class="text-center mx-auto d-block" href="#"
+          ><button class="mt-4 px-4 py-2 btn-2">Contact Us for Quote</button></a
+        >
+      </div>
+    </div>
+
+    <!--Ready to Build-->
+    <div class="ready">
+      <div class="container text-center my-5">
+        <h2
+          class="fw-bold fs-1"
+          style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)"
+        >
+          We’re Excited to Work With You
+        </h2>
+        <p class="w-75 mx-auto fs-5">
+          Start today — let our team guide you step by step in creating a
+          strong, lasting digital presence that helps your business grow.
+        </p>
+
+        <div>
+          <a href="/"
+            ><button class="book-now px-4 py-2 rounded mx-2">
+              Book Now
+            </button></a
+          >
+          <a href="/"
+            ><button class="view-portfolio px-4 py-2 rounded">
+              View Portfolio
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="row container-fluid">
+        <div class="col-sm-3">
+          <h4
+            class="fw-bold"
+            style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)"
+          >
+            PHILNETIX
+          </h4>
+          <p class="mt-3">
+            We help businesses and individuals build a strong online presence
+            through modern, professional, and user-friendly websites. Get more
+            customers online with a professional website.
+          </p>
+
+          <p>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-facebook text-white fs-5"></i
+            ></a>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-instagram text-white fs-5"></i
+            ></a>
+            <a href="/" class="mx-2"
+              ><i class="fa-brands fa-linkedin text-white fs-5"></i
+            ></a>
+          </p>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Quick Links</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="py-1"><a href="#">Home</a></li>
+            <li class="py-1"><a href="about.html">About</a></li>
+            <li class="py-1"><a href="#">Services</a></li>
+            <li class="py-1"><a href="#">Portfolio</a></li>
+            <li class="py-1"><a href="#">Book Now</a></li>
+            <li class="py-1"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Contact Us</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="py-1">
+              <a href="#"
+                ><i class="fa-regular fa-envelope text-white mx-2 fs-5"></i>
+                info@philnetix.com</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#"
+                ><i
+                  class="fa-solid fa-mobile-screen-button text-white mx-2 fs-5"
+                ></i
+                >+234 706 116 6390</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#"
+                ><i class="fa-brands fa-whatsapp text-white mx-2 fs-5"></i>+234
+                706 116 6390</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3">
+          <h4 class="fw-bold">Coding Class</h4>
+          <p>
+            Interested in coding? Whether you’re a student or just love
+            learning, complete the form below, and we’ll reach out to you.
+          </p>
+
+          <form action="/">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="mb-2 form-control"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Whatsapp Number"
+              class="mb-2 form-control"
+              required
+            />
+
+            <a href="/"
+              ><button
+                type="submit"
+                class="book-now px-4 py-2 rounded form-control"
+              >
+                Enroll Now
+              </button></a
+            >
+          </form>
+        </div>
+      </div>
+      <div class="thin-line mt-5"></div>
+      <footer style="color: gray; font-size: 12px" class="text-center mt-2">
+        &copy; 2025 PHILNETIX. All Rights Reserved.
+      </footer>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="../index.js"></script>
+  </body>
+</html>

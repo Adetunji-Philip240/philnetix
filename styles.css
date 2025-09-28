@@ -245,6 +245,26 @@ main > div > div > img {
   padding: 20px;
   z-index: 1;
 }
+
+.card1 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.btn-2 {
+  background-color: var(--second-color);
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: transform 0.2s ease;
+}
+
+.btn-2:hover {
+  transform: scale(0.95); /* shrink slightly */
+}
 /*For Mobile Screen*/
 
 @media (max-width: 767px) {
