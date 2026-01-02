@@ -265,6 +265,36 @@ main > div > div > img {
 .btn-2:hover {
   transform: scale(0.95); /* shrink slightly */
 }
+
+.project-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.project {
+  position: relative;
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Desktop view */
+.project img:first-child {
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Mobile view */
+.project img:last-child {
+  width: 25%;
+  border-radius: 10px;
+  position: absolute;
+  right: 13%;
+  bottom: -20%;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
 /*For Mobile Screen*/
 
 @media (max-width: 767px) {
@@ -360,6 +390,31 @@ main > div > div > img {
   .ovx {
     overflow-x: scroll !important;
   }
+
+  .project {
+  position: relative;
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Desktop view */
+.project img:first-child {
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Mobile view */
+.project img:last-child {
+  width: 25%;
+  border-radius: 10px;
+  position: absolute;
+  right: 13%;
+  bottom: -20%;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
 }
 
 /*For Tablet Screen*/
