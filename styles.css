@@ -295,6 +295,62 @@ main > div > div > img {
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.carousel-indicators span {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background: var(--main-color);
+}
+
 /*For Mobile Screen*/
 
 @media (max-width: 767px) {
@@ -392,29 +448,29 @@ main > div > div > img {
   }
 
   .project {
-  position: relative;
-  width: 90%;
-  display: block;
-  margin: auto;
-  margin-top: 50px;
-}
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
 
-/* Desktop view */
-.project img:first-child {
-  width: 70%;
-  border-radius: 10px;
-}
+  /* Desktop view */
+  .project img:first-child {
+    width: 70%;
+    border-radius: 10px;
+  }
 
-/* Mobile view */
-.project img:last-child {
-  width: 25%;
-  border-radius: 10px;
-  position: absolute;
-  right: 13%;
-  bottom: -20%;
+  /* Mobile view */
+  .project img:last-child {
+    width: 25%;
+    border-radius: 10px;
+    position: absolute;
+    right: 13%;
+    bottom: -20%;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
 }
 
 /*For Tablet Screen*/

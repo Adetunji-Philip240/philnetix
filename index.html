@@ -178,7 +178,10 @@
               help you win more clients online.
             </p>
 
-            <a class="fw-bold" style="color: var(--second-color)" href="/"
+            <a
+              class="fw-bold"
+              style="color: var(--second-color)"
+              href="./services/web-dev.html"
               >Learn More</a
             >
           </div>
@@ -196,7 +199,10 @@
               in the market and draw in customers.
             </p>
 
-            <a class="fw-bold" style="color: var(--second-color)" href="/"
+            <a
+              class="fw-bold"
+              style="color: var(--second-color)"
+              href="./services/brand-marketing.html"
               >Learn More</a
             >
           </div>
@@ -214,7 +220,10 @@
               with targeted social media strategies.
             </p>
 
-            <a class="fw-bold" style="color: var(--second-color)" href="/"
+            <a
+              class="fw-bold"
+              style="color: var(--second-color)"
+              href="./services/social-media.html"
               >Learn More</a
             >
           </div>
@@ -234,7 +243,10 @@
               step-by-step training sessions.
             </p>
 
-            <a class="fw-bold" style="color: var(--second-color)" href="/"
+            <a
+              class="fw-bold"
+              style="color: var(--second-color)"
+              href="./services/web-dev-training.html"
               >Learn More</a
             >
           </div>
@@ -270,7 +282,10 @@
               experienced instructors.
             </p>
 
-            <a class="fw-bold" style="color: var(--second-color)" href="/"
+            <a
+              class="fw-bold"
+              style="color: var(--second-color)"
+              href="./services/web-dev-training.html"
               >Learn More</a
             >
           </div>
@@ -473,6 +488,7 @@
               <p style="color: rgb(77, 76, 76)" class="text-center fst-italic">
                 The CEO was very productive during his internship — he improved
                 our online presence by developing a modern, effective website.
+                Awesome!
               </p>
 
               <p class="text-center">
@@ -526,11 +542,60 @@
         creativity.
       </p>
 
-      <div class="container project-container">
-        <div class="project">
-          <img src="./images/project (2).jpg" alt="goe company" />
-          <img src="./images/project (6).jpg" alt="goe company" />
+      <div class="container carousel project-container">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="project">
+              <a href="https://goetransport.com.ng/" target="_blank">
+                <img src="./images/project (2).jpg" alt="goe company" />
+                <img src="./images/project (6).jpg" alt="goe company" />
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="project">
+              <a href="https://mickeyexcellency.com/" target="_blank">
+                <img src="./images/project (3).jpg" alt="mickey excellency" />
+                <img src="./images/project (7).jpg" alt="mickey excellency" />
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="project">
+              <a href="https://captainscafeteria.netlify.app/" target="_blank">
+                <img src="./images/project (4).jpg" alt="captainscafeteria" />
+                <img src="./images/project (8).jpg" alt="captainscafeteria" />
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="project">
+              <a href="https://goetransport.com.ng/" target="_blank">
+                <img src="./images/project (1).jpg" alt="apa tech edu" />
+                <img src="./images/project (9).jpg" alt="apa tech edu" />
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="project">
+              <a href="https://murphy-computers.netlify.app/" target="_blank">
+                <img src="./images/project (5).jpg" alt="murphy computers" />
+                <img src="./images/project (10).jpg" alt="murphy computers" />
+              </a>
+            </div>
+          </div>
         </div>
+
+        <!-- Buttons -->
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators"></div>
       </div>
     </div>
 
@@ -664,9 +729,65 @@
       </div>
       <div class="thin-line mt-5"></div>
       <footer style="color: gray; font-size: 12px" class="text-center mt-2">
-        &copy; 2025 PHILNETIX. All Rights Reserved.
+        &copy; 202 PHILNETIX. All Rights Reserved.
       </footer>
     </div>
+
+    <script>
+      const track = document.querySelector(".carousel-track");
+      const slides = document.querySelectorAll(".carousel-slide");
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+      const indicators = document.querySelector(".carousel-indicators");
+
+      let index = 0;
+      let timer;
+
+      slides.forEach((_, i) => {
+        const dot = document.createElement("span");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goToSlide(i));
+        indicators.appendChild(dot);
+      });
+
+      const dots = document.querySelectorAll(".carousel-indicators span");
+
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((d) => d.classList.remove("active"));
+        dots[index].classList.add("active");
+      }
+
+      function goToSlide(i) {
+        index = i;
+        update();
+        resetAuto();
+      }
+
+      function next() {
+        index = (index + 1) % slides.length;
+        update();
+      }
+
+      function prev() {
+        index = (index - 1 + slides.length) % slides.length;
+        update();
+      }
+
+      nextBtn.onclick = next;
+      prevBtn.onclick = prev;
+
+      function startAuto() {
+        timer = setInterval(next, 4000);
+      }
+
+      function resetAuto() {
+        clearInterval(timer);
+        startAuto();
+      }
+
+      startAuto();
+    </script>
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
