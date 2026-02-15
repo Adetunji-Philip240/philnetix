@@ -105,6 +105,13 @@ nav.scrolled .book-now {
   font-weight: 600;
 }
 
+.btn2 {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
 .view-portfolio {
   background: none;
   border: 1px solid white;
